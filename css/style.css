@@ -1,0 +1,129 @@
+/* This is where your CSS style definitions should be placed. */
+
+body {
+   line-height: 1.45;
+}
+
+p {
+   margin-bottom: 0.75em;
+}
+
+.header {
+        margin-bottom: 10px;
+        text-align: center;
+    	verticle-align: middle;	
+    	font-size: xx-large;	
+   }
+   
+   a:link {
+  		color: blue;
+  		background-color: transparent;
+  		text-decoration: underline;
+	}
+	
+	a:hover {
+  		color: black ;
+ 		background-color: #cfc ;
+	}
+   
+   img.logo {
+   		display: block;
+   		margin-left: auto;
+   		margin-right: auto;
+   		margin-top: 10px;
+   		margin-bottom: 10px;
+   		width: 40%;
+   		height: 40%;
+   }
+   
+   img.portrait {
+   		display: block;
+   		margin: 0px 10px 10px 0px;
+  		float: left;
+   }
+   
+   h1 {
+   		margin: 15px 50px;	
+    	font-size: xx-large;	
+   }
+
+   h2 {
+		margin: 15px 50px;	
+    	font-size: x-large;	
+   }
+	
+   h3 {
+		margin: 15px 50px;	
+    	font-size: large;
+   }
+   
+   table.links{
+   		margin: auto;
+   		width: 100%;
+    	table-layout: fixed;
+   }
+   
+   table.links td{
+   		text-align: center;
+    	vertical-align: middle;
+   }
+   
+    table.rates{
+   		margin: auto;
+   		width: 75%
+    	table-layout: auto;
+    	border: 1px solid black;
+   }
+   
+   table.rates td{
+   		text-align: left;
+    	vertical-align: middle;
+    	border: 1px solid black;
+   }
+   
+   table.rates th{
+   		text-align: center;
+    	vertical-align: middle;
+    	border: 1px solid black;
+   }
+   
+   .contact {
+   		text-align: center;
+   }
+   
+   .footer {
+   		position: relative;
+   		margin: 150px 50px;
+        text-align: left;
+    	verticle-align: left;	
+    	font-size: small;
+   }
+   
+   .body {
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+   }
+   
+   .description{
+		margin-left: 50px;
+		margin-right: 100px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+   }
+   
+   .center {
+   	    margin: auto;
+    	text-align: center;
+    	vertical-align: middle;
+	}
+   
+   .big { 
+   		font-size: x-large; 
+   	}
+   		
+   .small{ 
+   		font-size: small; 
+   	}
+   	
