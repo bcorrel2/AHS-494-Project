@@ -1,32 +1,10 @@
 /* This is where your CSS style definitions should be placed. */
 
-body {
-   line-height: 1.45;
-}
+/* --------------------- Global Styling -----------------------*/
 
-p {
-   margin-bottom: 0.75em;
-}
+/* ------------------------ Header --------------------------- */
 
-.header {
-        margin-bottom: 10px;
-        text-align: center;
-    	verticle-align: middle;	
-    	font-size: xx-large;	
-   }
-   
-   a:link {
-  		color: blue;
-  		background-color: transparent;
-  		text-decoration: underline;
-	}
-	
-	a:hover {
-  		color: black ;
- 		background-color: #cfc ;
-	}
-   
-   img.logo {
+	img.logo {
    		display: block;
    		margin-left: auto;
    		margin-right: auto;
@@ -36,47 +14,105 @@ p {
    		height: 40%;
    }
    
-   img.portrait {
+   img.biglogo {
    		display: block;
-   		margin: 0px 10px 10px 0px;
-  		float: left;
+   		margin-left: auto;
+   		margin-right: auto;
+   		margin-top: 10px;
+   		margin-bottom: 10px;
+   		width: 40%;
+   		height: 40%;
    }
-   
+
+ 	a:link {
+  		color: blue;
+  		background-color: transparent;
+  		text-decoration: underline;
+	}
+	
+	a:hover {
+  		color: black ;
+ 		background-color: #cfc ;
+	}
+	
+	a:focus{
+  		 color: green;
+  		 background-color: white;
+   		 outline: none;
+	}
+	
+/* ----------------------- Footer --------------------------*/
+
+.webfooter {
+   		position: relative;
+   		margin: 150px 50px;
+        text-align: left;	
+    	font-size: 0.9em;
+   }
+
+/* ------------------- General Content ---------------------*/
+	
+	body {
+ 	  line-height: 1.45;
+ 	  background-color:beige; 
+	}
+	
+	.bodytext {
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+   }
+
+	p {
+	   margin-bottom: 0.75em;
+	}
+    
    h1 {
    		margin: 15px 50px;	
-    	font-size: xx-large;	
+    	font-size: 2.5em;	
    }
 
    h2 {
 		margin: 15px 50px;	
-    	font-size: x-large;	
+    	font-size: 2em;	
    }
 	
    h3 {
 		margin: 15px 50px;	
-    	font-size: large;
+    	font-size: 1.5em;
    }
    
-   table.links{
-   		margin: auto;
-   		width: 100%;
-    	table-layout: fixed;
+   h4 {
+		margin: 15px 50px;	
+    	font-size: 1.25em;
    }
    
-   table.links td{
-   		text-align: center;
+   .big-text { 
+   		font-size: 1.25em; 
+   	}
+   		
+   .small-text{ 
+   		font-size: .75em; 
+   	}
+   	
+   .center-text {
+   	    margin: auto;
+    	text-align: center;
     	vertical-align: middle;
-   }
+	}
    
+/* ----------------------- Tables --------------------------*/
     table.rates{
    		margin: auto;
-   		width: 75%
+   		width: 30%;
     	table-layout: auto;
     	border: 1px solid black;
    }
    
    table.rates td{
    		text-align: left;
+   		text-indent: 0.5em;
     	vertical-align: middle;
     	border: 1px solid black;
    }
@@ -87,43 +123,215 @@ p {
     	border: 1px solid black;
    }
    
-   .contact {
-   		text-align: center;
-   }
-   
-   .footer {
-   		position: relative;
-   		margin: 150px 50px;
-        text-align: left;
-    	verticle-align: left;	
-    	font-size: small;
-   }
-   
-   .body {
-		margin-left: 50px;
-		margin-right: 50px;
+   table.rates tr:nth-child(even) {
+    	background-color:lightgray;
+	}
+	
+	table.rates tr:nth-child(odd) {
+    	background-color:white;
+	}
+	
+/* ------------------------ Index ---------------------------*/	
+	.mstatement {
+ 	  	margin-left: 80px;
+		margin-right: 80px;
 		margin-top: 10px;
 		margin-bottom: 10px;
-   }
+	}
    
-   .description{
+/* ----------------------- Contact --------------------------*/
+
+	.contact {
+   		text-align: center;
+   }
+
+/* ------------------------ About ---------------------------*/
+
+	img.portrait {
+   		display: block;
+   		margin: 0px 10px 10px 0px;
+  		float: left;
+   	}
+   	
+   	.description{
 		margin-left: 50px;
 		margin-right: 100px;
 		margin-top: 10px;
 		margin-bottom: 10px;
    }
    
-   .center {
-   	    margin: auto;
-    	text-align: center;
-    	vertical-align: middle;
-	}
-   
-   .big { 
-   		font-size: x-large; 
-   	}
+/* -------------------- Mobile Screen ---------------------- */
+
+		#mobile {
+			position: relative;
+  			width: 100%;
+   			margin-bottom: 600px;
+   			background-color: white;
+  			border-top: 1px solid black;
+   			box-shadow: 1px 1px 2px #808080;
+		}
+		
+		#mobile ul {
+   			padding: 0;
+   			margin: 3.5em 0;
+   			list-style-type: none;
+		}
+		
+		#mobile li {
+ 			margin: 0;
+   			padding: 0;
+		}
+		
+		#mobile a {
+  			display: block;
+   			width: 100%;
+   			text-decoration: none;
+   			color: black;
+   			text-align: center;
+   			font-size: 1.2em;
+   			line-height: 2em;
+   			border-top: 1px solid black;
+   			border-bottom: 1px solid #808080;
+		}
+
+		#mobile a:hover,
+		#mobile a:focus {
+		    color: blue;
+  			background-color: white;
+   			outline: none;
+		}
+		
+		a#mobile-close {
+   			position: absolute;
+   			top: 0.5em;
+   			right: 0.5em;
+   			width: 2em;
+   			border: 1px solid black;
+   			border-radius: 5px;
+   			box-shadow: 1px 1px 2px #808080;
+		}
+
+		#mobile-button {
+   			display: block;
+   			position: absolute;
+   			top: 0.75em;
+   			right: 0.75em;
+   			margin-bottom: 0.5em;
+   			border: 1px solid black;
+   			border-radius: 5px;
+   			width: 2.5em;
+   			height:1.5em;
+   			background-color: #eee;
+   			transition: background-color 0.15s;
+   			box-shadow: 1px 1px 2px #808080;
+		}
+		
+		#mobile-button:before {
+   			box-sizing: content-box;
+   			content: "";
+   			position: absolute;
+   			top: 0.15em;
+   			left: 0.15em;
+   			width: 2em;
+   			height: 0.2em;
+   			border-top: 0.6em double;
+   			border-bottom: 0.2em solid;
+   			border-color: black;
+   			transition: border-color 0.15s;
+		}
+
+		#mobile-button:hover,
+		#mobile-button:focus {
+   			background-color: white;
+   			transition: background-color 0.15s;
+   			outline: none;
+		}
+		
+		#mobile-button:hover:before,
+		#mobile-button:focus:before {
+   			border-color: #428bca;
+   			transition: border-color 0.15s;
+		}
+
+		#desktop {
+  			display: none;
+		}
+		
+		#desktop a:hover,
+		#desktop a:focus {
+   			text-decoration: underline;
+		}
+		
+	/* ---------------------- Styles ---------------------- */
+
+		img.logo {display: none} 
+		img.biglogo {display: block} 
+
+/* -------------------- Tablet Screen ---------------------- */
+  		@media all and (min-width:651px) { 
+
+		#mobile-button,
+  		#mobile {
+      		display: none;
+  		}
+
+		#desktop {
+			display: inherit;
+		}
+	
+		#desktop ul {
+      		display: block;
+      		text-align: center;
+      		list-style-type: none;
+     	 	margin: 0;
+      		padding: 0;
+      		overflow: hidden;
+   		}
    		
-   .small{ 
-   		font-size: small; 
-   	}
-   	
+   		#desktop ul li {
+   		    display: inline;
+   		    float: left;
+      		padding: 0;
+      		margin: 0;
+      		width: 33%;
+      	}
+      	
+      	 #desktop a {
+      		display: block;
+      		width: 100%;
+      		margin: 0;
+      		padding: 0;
+      		font-size: 1.25em;
+      		text-align: center;
+      		text-decoration: none;
+   }
+	
+	/* ---------------------- Styles ----------------------- */
+		img.logo {display: block} 
+		img.biglogo {display: none} 
+    }
+    
+/* -------------------- Desktop Screen --------------------- */
+    	@media all and (min-width:1026px) {  
+	
+		#mobile-button,
+  		#mobile {
+      		display: none;
+  		}
+
+		#desktop {
+			display: inherit;
+		}
+		
+		/* ---------------------- Styles ----------------------- */
+		
+		}
+    
+/* --------------- Misc. info --------------------- */
+/* Page breaks at 0 to 650px, 651px to 1025px, 1026px to max width. */
+
+	img {
+		max-width:100%;
+        height:auto;
+	}
+

@@ -13,38 +13,47 @@
 <body>
 
 <header role = "banner">
-<img class = "logo" src="images/logo.png" alt="Correll Accessibility Consulting">
-<nav role="navigation">
-    <table class = "links"><tr>
-	<td><a href="index.html">Home</a></td>
-	<td><a href="about.html">About</a></td>
-	<td><a href="contact.html">Contact Us</a></td>
-	</tr></table>
-    <!--<ul>
+<a href="index.html">
+<img class ="logo" src="images/logo.png" alt="Correll Accessibility Consulting">
+</a>
+<a href="index.html">
+<img class ="biglogo" src="images/logo_big.png" alt="Correll Accessibility Consulting">
+</a>
+<nav id=desktop role="navigation">
+    <ul>
 	<li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-    </ul>--!>
+	<li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	</ul>
 </nav>
+<a id="mobile-button" href="#mobile" role="button" aria-label="Navigation"></a>
 </header>
 
-<main role = "main">
-<section id = "About" role = "reason">
+<main role="main">
 <h1>About Us</h1>
-<div class = "description">
-<img class = "portrait" src="images/Ben.jpg" alt="Ben Correll in Formal Atire">
+<div class="description">
+<img class="portrait" src="images/Ben.jpg" alt="Ben Correll in Formal Atire">
 <h2>Ben Correll</h2>
-<p> Ben is the founder and CEO of Correll Consulting. A Junior at the University of
-Illininois Urbana-Champaign, Ben's mission is to ensure the internet is a usable
-and accessible place for everyone. When he is not busily typing away at a keyboard,
-Ben enjoys napping, eating and taking long walks through the park.</p>
+<p> Ben is the founder and CEO of Correll Consulting. A Junior in Computer Science 
+and Linguistics at the University of Illinois Urbana-Champaign, Ben's mission is to ensure 
+the internet is a usable and accessible place for everyone. Ben specializes in accessible 
+tech, as well as natural language processing. When he is not busily typing away at a 
+keyboard, Ben enjoys napping, eating and taking long walks through the park.</p>
 </div>
-</section>
 </main>
 
-<footer>
-<div class = "footer"> All Rights Reserved </div>
+<footer role="contentinfo">
+<div class="webfooter"> Copyright © 2018, Ben Correll. All Rights Reserved </div>
 </footer>
+
+<nav id=mobile role="navigation">
+<a id="mobile-close" href="#mobile-button" role="button"><span aria-label="Close Menu">X</span></a>
+    <ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+</nav>
 
 </body>
 

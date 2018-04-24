@@ -14,64 +14,64 @@
 <body>
 
 <header role = "banner">
-<img class = "logo" src="images/logo.png" alt="Correll Accessibility Consulting">
-<nav role="navigation">
-    <table class = "links"><tr>
-	<td><a href="index.html">Home</a></td>
-	<td><a href="about.html">About</a></td>
-	<td><a href="contact.html">Contact Us</a></td>
-	</tr></table>
-    <!--<ul>
+<a href="index.html">
+<img class ="logo" src="images/logo.png" alt="Correll Accessibility Consulting">
+</a>
+<a href="index.html">
+<img class ="biglogo" src="images/logo_big.png" alt="Correll Accessibility Consulting">
+</a>
+<nav id=desktop role="navigation">
+    <ul>
 	<li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-    </ul>--!>
+	<li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	</ul>
 </nav>
+<a id="mobile-button" href="#mobile" role="button" aria-label="Navigation"></a>
 
 </header>
 
-<main role = "main">
-<section id = "Mission Statement" role = "reason">
-<div class = "center"><h1>Mission Statement</h1></div>
-<div class = "body">
+<main role="main">
+<div class="center-text"><h1>Mission Statement</h1>
+<div class="mstatement">
 <p>Correll Consulting evaluates client's websites to ensure full compliance with 
 modern accessibility standards. We test, and if need be modify, every aspect of a 
 website so that you can be confident in your website's construction. It is our
 goal to ensure that every website conforms to the unique needs of it's individual
-users no matter their background.</p> </div>
-</section>
-<section id = "What We Do" role = "reason">
+users, no matter their background.</p> </div> </div>
+
 <h2>What We Do</h2>
-<div class = "body">
 
 <h3>Accessibility Reports</h3>
-<div class = "body"><p>Our specialists will review your website in it's
+<div class="bodytext"><p>Our specialists will review your website in it's
 entirety and provide a detailed report of all accessibility violations
-present.</p></div>
+present. You will receive both a physical and digital copy of the report.
+The report will cover every facet of Accessibility and will assess how your website
+performs.</p></div>
 
 <h3>Website Modification</h3>
-<div class = "body"><p>Our programmers will personally fix all relevant issues
-with your website to ensure it meeds accessibility standards (requires previous
-Accessibility Report).</p></div>
+<div class="bodytext"><p>Our programmers will personally fix all relevant issues
+with your website to ensure it meets accessibility standards. In addition, they
+will train your employees in managing and updating it. An Accessibility Report
+must be obtained prior to requesting this service.</p></div>
 
 <h3>Annual/Biannual Maintenance</h3>
-<div class = "body"><p>Our programmers will routinely evaluate and update your
-website to ensure that it remains compliant (requires previous Accessibility Report).</p></div>
-</section>
+<div class="bodytext"><p>Our programmers will routinely evaluate and update your
+website to ensure that it remains compliant. We will fix any issues created
+and update any outdated formats. A Website Modification service must be provided prior
+to requesting this service.</p></div>
 
-<section id = "Why Us" role = "reason">
 <h2>Why Correll Consulting?</h2>
-<div class = "body">
+<div class="bodytext">
 <p> We at Correll Consulting strive to provide you with the best customer service
-on the market. We offer personalized support to ensure that you are in the know.
-We guarantee that your website will be more accessible or your money back! </p>
+on the market. We offer personalized support to ensure that you are in the know every
+step of the way. We guarantee that your website will be more accessible or your 
+money back! </p>
 </div>
-</section>
 
-<section id = "Rates" role = "reason">
 <h2>Our Consulting Rates</h2>
 
-<table class = "rates">
+<table class="rates">
   <tr>
   <th>Service</th>
   <th>Price</th>
@@ -94,13 +94,20 @@ We guarantee that your website will be more accessible or your money back! </p>
   </tr>
 </table>
 
-</section>
-
 </main>
 
-<footer>
-<div class = "footer"> All Rights Reserved </div>
+<footer role="contentinfo">
+<div class="webfooter"> Copyright © 2018, Ben Correll. All Rights Reserved </div>
 </footer>
+   
+<nav id=mobile role="navigation">
+<a id="mobile-close" href="#mobile-button" role="button"><span aria-label="Close Menu">X</span></a>
+    <ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact Us</a></li>
+	</ul>
+</nav>
 
 </body>
 
